@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
                welcome_message.setText("Otro Mensaje");
                Button mew_button = (Button) v;
                new_button.setText("Mensaje Actualizado");
+               Toast messageToast = Toast.makeText(getApplicationContext(),"Segundo Boton Clickeado", Toast.LENGTH_SHORT);
+               messageToast.show();
            }
        });
     }
@@ -35,5 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //R.id.welcome_message con esto se encuentra un elementro dentro de mis recursos
         TextView welcome_message = findViewById(R.id.welcome_message);
         welcome_message.setText(R.string.new_message);
+       Toast messageToast = Toast.makeText(this,"Primer boton clickeado",Toast.LENGTH_SHORT);
+       messageToast.show();
     }
 }

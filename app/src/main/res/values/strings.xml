@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">26.3.leasson</string>
-    <string name="welcome_message">Hola Mundo</string>
-    <string name="cambiar_mensaje">Cambiar Mensaje</string>
-    <string name="new_message">New message</string>
+    <string name="welcome_message">Hola mundo!</string>
+    <string name="button_text">Cambiar mensaje</string>
+    <string name="new_message">New Message</string>
 
 </resources>

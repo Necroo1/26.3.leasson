@@ -8,34 +8,38 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="254dp"
-        android:layout_height="428dp"
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077"
-        tools:visibility="visible">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/welcome_message"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="296dp"
+            android:layout_marginBottom="21dp"
             android:text="@string/welcome_message" />
 
         <Button
-            android:id="@+id/cambiar_mensaje"
+            android:id="@+id/button_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:onClick="updateMessage"
-            android:text="@string/cambiar_mensaje" />
+            android:text="@string/button_text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text"
+            android:layout_marginStart="32dp"
+            />
 
     </LinearLayout>
 

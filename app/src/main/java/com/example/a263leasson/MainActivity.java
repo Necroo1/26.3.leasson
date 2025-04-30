@@ -1,6 +1,9 @@
 package com.example.a263leasson;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void updateMessage (View view) {
+        //Log.i("test-message","actualizando campo de texto");
+        //R.id.welcome_message con esto se encuentra un elementro dentro de mis recursos
+        TextView welcome_message = findViewById(R.id.welcome_message);
+        welcome_message.setText("New message");
     }
 }

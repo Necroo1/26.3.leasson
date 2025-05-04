@@ -31,8 +31,11 @@ public class MainActivity extends AppCompatActivity {
         new_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView welcome_message = findViewById(R.id.welcome_message);
+                TextView welcome_message = new TextView(getApplicationContext());
+                LinearLayout card = findViewById(R.id.viewer);
                 welcome_message.setText("Otro mensaje");
+                card.addView(welcome_message);
+//                TextView welcome_message = findViewById(R.id.welcome_message);
                 Button new_button = (Button) v;
                 new_button.setText("Mensaje Actualizado");
                 Toast messageToast = Toast.makeText(getApplicationContext(), "Segundo botón clickeado", Toast.LENGTH_LONG);

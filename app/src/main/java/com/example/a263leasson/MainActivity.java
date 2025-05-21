@@ -1,5 +1,6 @@
 package com.example.a263leasson;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,5 +52,9 @@ public class MainActivity extends AppCompatActivity {
         welcome_message.setText(R.string.new_message);
        Toast messageToast = Toast.makeText(this,"Primer boton clickeado",Toast.LENGTH_SHORT);
        messageToast.show();
+    }
+    public void openActivity (View view) {
+        Intent intent = new Intent(this,ListViwerActivity.class);
+        startActivity(intent);
     }
 }

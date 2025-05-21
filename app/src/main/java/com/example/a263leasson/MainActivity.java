@@ -21,28 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button new_button = new Button(this);
-        new_button.setText(R.string.new_message);
-        new_button.setWidth(LinearLayout.LayoutParams.WRAP_CONTENT);
-        new_button.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
-
-        LinearLayout card = (LinearLayout) findViewById(+R.id.card);
-        card.addView(new_button);
-
-        new_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView welcome_message = new TextView(getApplicationContext());
-                LinearLayout card = findViewById(R.id.viewer);
-                welcome_message.setText("Otro mensaje");
-                card.addView(welcome_message);
-//                TextView welcome_message = findViewById(R.id.welcome_message);
-                Button new_button = (Button) v;
-                new_button.setText("Mensaje Actualizado");
-                Toast messageToast = Toast.makeText(getApplicationContext(), "Segundo botón clickeado", Toast.LENGTH_LONG);
-                messageToast.show();
-            }
-        });
     }
 
     public void updateMessage (View view) {

@@ -3,5 +3,6 @@
     <string name="welcome_message">Hola mundo!</string>
     <string name="button_text">Cambiar mensaje</string>
     <string name="new_message">New Message</string>
+    <string name="message_text">Mensaje de ejemplo</string>
 
 </resources>

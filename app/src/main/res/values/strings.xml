@@ -4,5 +4,6 @@
     <string name="button_text">Cambiar mensaje</string>
     <string name="new_message">New Message</string>
     <string name="message_text">Mensaje de ejemplo</string>
+    <string name="download_url">https://www.liderdelemprendimiento.com/wp-content/uploads/2023/06/Que-son-las-inversiones.png</string>
 
 </resources>
